@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHIA</title>
+
+<!-- リセットCSS -->
+ <link rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+
+<!-- css読み込み -->
+ <link rel="stylesheet"
+ href="./style.css">
+</head>
+
+<body>
+    <header>
+        <a href="./" class="logo">CLOTHIA</a>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="box">
+                <h1> A minimal clothing brand focused on comfort and quality.</h1>
+                <p class="jp">着心地と高い品質をあなたの日常へ</p>
+            </div>
+        </section>
+
+        <section class="slider">
+            <button class="prev" onclick="slide(-1)">＜</button>
+            <div class="slider-window">
+                <div class="slider-track">
+                  <img src="images/img2.jpg" alt="セール1">
+                  <img src="images/img3.jpg" alt="セール2">
+                </div>
+            </div>
+            <button class="next" onclick="slide(1)">＞</button>
+        </section>
+
+        <section class="shop">
+            <div class="categories">
+                <button data-category="all" class="active">All</button>
+                <button data-category="tops">Tops</button>
+                <button data-category="bottoms">Bottoms</button>
+                <button data-category="shoes">Shoes</button>
+            </div>
+            <div id="product-list" class="product-grid"></div>
+        </section>
+        
+        <!-- 追加：カート-->
+         <section class="cart">
+            <h2>Cart</h2>
+            <!-- 追加：中身表示 -->
+             <ul id="cart-list"></ul>
+             <p>Total ¥<span id="cart-total">0</span></p>
+             <button id="checkout-btn">Checkout</button>
+        </section>
+        
+        <section class="top-ranking">
+            <h2>Top Ranking</h2>
+            <div class="ranking-grid">
+                <div class="product">
+                    <span class="rank">No.1</span>
+                    <img src="images/img4.jpg" alt="brown tops">
+                    <p>Brown Tops</p>
+                    <span>¥4,900</span>
+                </div>
+                <div class="product">
+                    <span class="rank">No.2</span>
+                    <img src="images/img5.jpg" alt="pink pants">
+                    <p>Pink Pants</p>
+                    <span>¥12,000</span>
+                </div>
+                <div class="product">
+                    <span class="rank">No.3</span>
+                    <img src="images/img6.jpg" alt="white shoes">
+                    <p>White Shoes</p>
+                    <span>¥8,900</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>News</h2>
+            <div class="news-grid">
+                <article class="news-item">
+                    <a href="news1.html">
+                        <span class="date">2025.12.27</span>
+                        <h3>Winter Collection Released</h3>
+                        <p>新作の冬コレクションが登場しました。暖かくてミニマルなデザイン。</p>
+                    </a>
+                </article>
+                <article class="news-item">
+                    <a href="news2.html">
+                        <span class="date">2025.12.15</span>
+                        <h3>How We Choose Our Fabrics</h3>
+                        <p>着心地にこだわった素材選びの裏側をご紹介。</p>
+                    </a>
+                </article>
+                <article class="news-item">
+                    <a href="news3.html">
+                        <span class="date">2025.12.01</span>
+                        <h3>Styling Tips for Everyday Wear</h3>
+                        <p>日常に取り入れやすいコーディネートの提案です。</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <h2 class="footer-logo">CLOTHIA</h2>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">返品・交換</a></li>
+                    <li><a href="#">利用規約</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 CLOTHIA</p>
+        </div>
+    </footer>
+  
+
+<script src="script.js"></script>
+</body>
+</html>
