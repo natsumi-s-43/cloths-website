@@ -2,6 +2,9 @@
 
 A simple clothing e-commerce website built with **HTML, CSS, and JavaScript**.
 
+## Demo
+https://natsumi-s-43.github.io/cloths-website/
+
 ### Features
 - Product filtering by category and conditions
 - Dynamic price calculation and total price update
